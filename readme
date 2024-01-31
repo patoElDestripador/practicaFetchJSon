@@ -1,0 +1,37 @@
+# Repositorio de Repaso de JSON y Fetch
+*Objetivo*
+
+Este repositorio tiene como objetivo proporcionar una revisión práctica de las habilidades aprendidas en el manejo de datos JSON y la utilización de la API Fetch en JavaScript. Se utilizará json-server para simular una API REST y se emplearán métodos Fetch para recuperar y mostrar datos.
+
+*Cómo Empezar*
+Requisitos Previos
+Antes de empezar, asegúrate de tener instalado Node.js, que incluye npm, ya que es necesario para ejecutar json-server.
+
+*Instalación*
+
+Para instalar json-server , ejecuta:
+
+npm install json-server
+
+*Inicializar JSON Server*
+
+Una vez instalado, puedes iniciar el servidor JSON con el siguiente comando:
+
+
+json-server --watch data/db.json
+
+Este comando iniciará un servidor local y expondrá los datos de data/db.json en una API REST simulada.
+
+*Uso*
+Una vez que el servidor JSON está en funcionamiento, el siguiente paso es utilizar métodos Fetch para recuperar y mostrar la información.
+
+*Realizar Solicitudes Fetch*
+
+En tu archivo JavaScript principal, realiza solicitudes Fetch para interactuar con la API. Aquí tienes un ejemplo básico de cómo hacerlo:
+
+fetch('http://localhost:3000/tuRecurso')
+  .then(response => response.json())
+  .then(data => console.log(data))
+  .catch(error => console.error('Error:', error));
+
+Reemplaza 'http://localhost:3000/tuRecurso' con la URL correspondiente a los recursos que deseas obtener de db.json.

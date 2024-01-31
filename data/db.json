@@ -1,0 +1,45 @@
+{
+  "personas":[
+    {
+      "nombre": "Ana",
+      "apellido": "López",
+      "usuario": "ana_lopez",
+      "password": "123456",
+      "correo": "ana.lopez@ejemplo.com",
+      "img": "https://randomuser.me/api/portraits/women/75.jpg"
+    },
+    {
+      "nombre": "Juan",
+      "apellido": "Pérez",
+      "usuario": "juan_perez",
+      "password": "654321",
+      "correo": "juan.perez@ejemplo.com",
+      "img": "https://randomuser.me/api/portraits/men/75.jpg"
+    },
+    {
+      "nombre": "María",
+      "apellido": "Gómez",
+      "usuario": "maria_gomez",
+      "password": "abcdef",
+      "correo": "maria.gomez@ejemplo.com",
+      "img": "https://randomuser.me/api/portraits/women/65.jpg"
+    },
+    {
+      "nombre": "Pedro",
+      "apellido": "Martínez",
+      "usuario": "pedro_martinez",
+      "password": "ghijkl",
+      "correo": "pedro.martinez@ejemplo.com",
+      "img": "https://randomuser.me/api/portraits/men/65.jpg"
+    },
+    {
+      "nombre": "Sofía",
+      "apellido": "Ramírez",
+      "usuario": "sofia_ramirez",
+      "password": "zxcvbnm",
+      "correo": "sofia.ramirez@ejemplo.com",
+      "img": "https://randomuser.me/api/portraits/women/55.jpg"
+    }
+  ]
+
+}

@@ -1,0 +1,13 @@
+{
+  "name": "formulario2",
+  "version": "1.0.0",
+  "description": "Se debe conectar la db con el index ya creado",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "json-server -w -p3001 data/db.json"
+  },
+  "keywords": ["riwi","study","mankos"],
+  "author": "pepe le pew",
+  "license": "ISC"
+}
