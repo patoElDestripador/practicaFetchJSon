@@ -1,4 +1,4 @@
-# Repositorio de Repaso de JSON y Fetch
+#Repositorio de Repaso de JSON y Fetch
 *Objetivo*
 
 Este repositorio tiene como objetivo proporcionar una revisión práctica de las habilidades aprendidas en el manejo de datos JSON y la utilización de la API Fetch en JavaScript. Se utilizará json-server para simular una API REST y se emplearán métodos Fetch para recuperar y mostrar datos.
