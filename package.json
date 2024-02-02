@@ -7,7 +7,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "json-server -w -p3001 data/db.json"
   },
-  "keywords": ["riwi","study","mankos"],
+  "keywords": [
+    "riwi",
+    "study",
+    "mankos"
+  ],
   "author": "pepe le pew",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-alpha.23"
+  }
 }

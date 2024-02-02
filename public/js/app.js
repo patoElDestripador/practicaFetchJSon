@@ -39,3 +39,70 @@ function validacion() {
     guardarUsuario();
   }
 }
+let url = "http://localhost:3000/"
+
+function getPersonas() {
+  let tbody = document.getElementById("ContenidoTablaID") 
+  let contador = 1;
+  fetch(`${url}personas?_sort=nombre`)
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(element => {
+      tbody.innerHTML += `<tr>
+    <td>#${contador}</td>
+    <td>${element.nombre}</td>
+    <td>${element.apellido}</td>
+    <td>${element.correo}</td>
+    <td><div class="btn-group" role="group" aria-label="Basic mixed styles example">
+    <button type="button" onclick="deletePersona('${element.id}')" class="btn btn-danger">eliminar</button>
+    <button type="button" class="btn btn-warning">editar</button>
+    <button type="button" class="btn btn-info">mas info</button>
+  </div></td>
+  </tr>`
+  contador++
+    });
+  })
+
+}
+
+function createPersona() {
+
+  let data = {
+    nombre: document.getElementById("nombres").value,
+    apellido: document.getElementById("apellidos").value,
+    usuario: "null",
+    password: "ghijkl",
+    correo: document.getElementById("correo").value,
+    img: "https://randomuser.me/api/portraits/men/65.jpg"
+  }
+
+  fetch(`${url}personas/`,{
+    method : "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data), 
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log("hola se guardo",data)
+  })
+
+}
+
+function deletePersona(id) {
+  fetch(`${url}personas/${id}`,{
+    method : "DELETE"
+  })
+  .then(res => res.json())
+  .then(data => {
+    console.log("se elimino",data)
+  })
+}
+
+
+document.getElementById("btnGuardar").addEventListener("click",()=>{
+  createPersona()
+})
+
+getPersonas()
