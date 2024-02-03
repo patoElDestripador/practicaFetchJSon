@@ -35,15 +35,6 @@
       "correo": "pedro.martinez@ejemplo.com",
       "img": "https://randomuser.me/api/portraits/men/65.jpg",
       "id": "a4b5"
-    },
-    {
-      "id": "06ea",
-      "nombre": "andres",
-      "apellido": "patiño",
-      "usuario": "null",
-      "password": "ghijkl",
-      "correo": "osloaw2@gmail.com",
-      "img": "https://randomuser.me/api/portraits/men/65.jpg"
     }
   ]
 }
